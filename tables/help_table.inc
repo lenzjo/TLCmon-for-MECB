@@ -1,0 +1,18 @@
+HELP_MSG_TABLE
+				.DW 	HLP_PEEK
+				.DW 	HLP_POKE
+				.DW 	HLP_DUMP
+
+				.DW 	HLP_EDMEM
+				.DW 	HLP_HELP
+				.DW 	HLP_COPY
+
+				.DW 	HLP_FILL
+				.DW 	HLP_HEX
+				.DW 	HLP_GO
+
+				.DW 	HLP_DISM
+				.DW 	HLP_UPTIME
+				.DW		HLP_DEC
+
+				.DW		HLP_BIN
