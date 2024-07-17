@@ -3,12 +3,16 @@
 ;=====================================================================
 
 NULL			.EQ		$00
+ETX				.EQ		$03
 BELL			.EQ		$07
 BS				.EQ		$08
 TAB				.EQ		$09
 LF				.EQ		$0A
 CLEAR_SCREEN	.EQ		$0C
 CR				.EQ		$0D
+DC2				.EQ		$12
+CAN				.EQ		$18
+EM				.EQ		$19
 
 ESC				.EQ		$1B					; ESC - reserved for ANSI seqences
 CUR_RIGHT		.EQ		$1C

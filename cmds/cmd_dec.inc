@@ -35,10 +35,13 @@ cde_dec
 				ldx #6
 cde_skip0
 				dex
-				lda DEC_BASE,x
+				cpx #1						; are we at the 1st ch?
+				beq cde_ploop				;		yes, then go print it
+
+				lda DEC_RES-1,x
 				beq cde_skip0				; skip over leading zeros
 cde_ploop
-				lda DEC_BASE,x				; and then the decimal number
+				lda DEC_RES-1,x				; and then the decimal number
 				clc
 				adc #$30					; make it printable ascii
 				jsr put_c

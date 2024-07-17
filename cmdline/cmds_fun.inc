@@ -8,7 +8,7 @@ gecm_loop
 				jsr get_c					; Read a chr from STDIN
 				cmp #CR
 				beq gecm_exit				; If it's a CR then exit
-
+gecm_bs
 				cmp #BS
 				bne gecm_maxbuff			; If it's not a BackSpace go on
 
